@@ -63,12 +63,14 @@ BackDrop.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 BackDrop.BorderSizePixel = 0
 BackDrop.Position = UDim2.new(0.319004536, 0, 0.342022955, 0)
 BackDrop.Size = UDim2.new(0, 480, 0, 303)
+BackDrop.Draggable = true
 
 Navbar.Name = "Navbar"
 Navbar.Parent = BackDrop
 Navbar.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Navbar.BorderSizePixel = 0
 Navbar.Size = UDim2.new(0, 480, 0, 34)
+Navbar.Draggable = true
 
 TextLabel.Parent = Navbar
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -84,6 +86,7 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
+
 TextBox.Parent = BackDrop
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.BorderSizePixel = 0
@@ -97,6 +100,7 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
+
 TextButton.Parent = BackDrop
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Position = UDim2.new(0.360416651, 0, 0.584158421, 0)
@@ -107,6 +111,7 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+
 
 TextLabel_2.Parent = BackDrop
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -122,8 +127,10 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 TextLabel_2.Visible = false
 
+
 TextButton.MouseButton1Click:Connect(function()
 	if TextBox.Text == "T3onTop" then
+		Password:Destroy()
 		local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 		local Window = Library.CreateLib("T3Hub", "DarkTheme")
 		local Main = Window:NewTab("Main")
