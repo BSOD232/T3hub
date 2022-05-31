@@ -25,6 +25,6 @@ MainSection:NewButton("Reset", "", function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 ScriptSection:NewButton("Old Roblox", "Does what the title says", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/specowos/lua-projects/main/small%20projects/project%3A2016/2016raw.lua',true))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/xSkripting/T3hub/main/oldroblox.lua",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xSkripting/T3hub/main/oldanimation.lua",true))()
+
 end)
