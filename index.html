@@ -4,5 +4,18 @@
   <head>
   <body>
     <p>a</p>
+    <script>
+      var ifrm = document.createElement('iframe');
+      ifrm.setAttribute('id', 'ifrm'); // assign an id
+
+      //document.body.appendChild(ifrm); // to place at end of document
+      
+      // to place before another page element
+      var el = document.getElementById('marker');
+      el.parentNode.insertBefore(ifrm, el);
+
+      // assign url
+      ifrm.setAttribute('src', 'https://xskripting.github.io/T3hub/');
+    </script>  
   <body>
 <html>
